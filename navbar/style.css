@@ -1,0 +1,120 @@
+*{
+    /* this are for default property so 
+    that no margin or padding should be added to the page */
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* we will add some image in backgrouns */
+header{
+    background: url(/home-banner-bg-2.jpg)no-repeat center center/cover;
+    height:100%;
+}
+.navbar-1{
+    display:flex;
+    align-items: center;
+    /* space between will add space between without any space either on right side or left side */
+    justify-content: space-between;
+   /* max width for adding maximu,m width */
+    max-width: 80%;
+    /* margin auto will make the whole div in cenetr */
+    margin:auto;
+/* linear gradient for gradient effects */
+padding:20px ;
+    background-image: linear-gradient(130deg, #f24c1a 0%, #f28e26 100%);
+
+    /* we will add colro white for all p and icns */
+    color:white;
+
+    /* add boirder radius to bottom left and bottom right */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+.navbar-1 i{
+    padding:0px 10px;
+}
+.navbar-1 p{
+    font-size: 18px;
+    /* add font family */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav-bar{
+ 
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.address{
+    padding:0px 10px;
+    display:flex;
+    align-items: center;
+}
+/* for email and time we will add display property */
+.email,.time{
+
+    border-left:1px dotted white;
+padding:0px 10px;
+    /* padding-left: 30px;
+    border-left:1px dotted black; */
+    display:flex;
+    align-items: center;
+}
+.social-icons{
+    display:flex;
+    align-items: center;
+}
+
+/* now this part is completed we can go to next part  */
+
+/* navbar-2 */
+.navbar-2{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;;
+    /* we will add same max width here */
+    max-width: 80%;
+   
+    margin:auto;
+}
+
+.logo img{
+width:250px;
+}
+
+/* first we will design button */
+.button button{
+    padding: 20px 50px;
+    /* cursoe pointer */
+    cursor: pointer;
+    background-image: linear-gradient(130deg, #f24c1a 0%, #f28e26 100%);
+    /* remove border */
+    border: none;
+    /* if we will use 50px or 50% fpr border radius it will make it circle */
+    border-radius: 5px;
+    font-size: 17px;
+    color:white;
+
+
+    /* add some hover effects */
+
+    &:hover{
+        /* we will reverse this */
+        background-image: linear-gradient(130deg, #f28e26 0%, #f24c1a 100%);
+    }
+}
+
+/* lets g to links */
+
+.links a{
+text-decoration: none;
+font-size: 20px;
+padding:0px 30px;
+color:white;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+/* add hover effects  */
+&:hover{
+    color:#f24c1a;
+}
+}
